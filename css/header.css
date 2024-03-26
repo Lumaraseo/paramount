@@ -1,0 +1,165 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+* {
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange-general: #FE5D14;
+    --Blue-primary: #0e1438;
+    --Blue-secundary: #131944;
+    --White-general: white;
+    --Black-general: black;
+    --Text-general: #61657E;
+}
+
+.containFather {
+    position: fixed;
+    font-family: "DM Sans", sans-serif;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    max-width: 1440px;
+    background-color: var(--White-general);
+}
+
+.fatherLogoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoHeader {
+    height: 50px;
+    width: auto;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navList li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: var(--Black-general);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.navList li .underline-text::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--Orange-general);
+    transition: width 0.3s ease;
+}
+
+.navList li:hover .underline-text::before {
+    width: 100%;
+}
+
+.openMenu,
+.closeMenu {
+    display: none;
+}
+
+.containH1Avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconBurger,
+.iconX {
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 0.3rem;
+    background-color: var(--Orange-general);
+    color: var(--White-general);
+}
+
+.btnHeader{
+    background: var(--Orange-general);
+    border:none;
+    color: var(--White-general);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1;
+    padding: 20px 31px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 780px) {
+
+    .openMenu,
+    .closeMenu {
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        color: var(--colorIconMenu);
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .closeMenu {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+    .nav {
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--blueDarkGeneral);
+        padding: 2rem;
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.5s;
+        background-color: var(--White-general);
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 2rem;
+    }
+
+    .underline-text {
+        display: block;
+    }
+}

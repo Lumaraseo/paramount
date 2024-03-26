@@ -1,12 +1,23 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 }
 
+:root {
+    --Orange-general: ##FE5D14;
+    --Blue-primary: #0e1438;
+    --Blue-secundary: #131944;
+    --White-general: white;
+    --Black-general: black;
+    --Text-general: #61657E
+}
 
-body{
-    background-color: #61657e;
+@media screen and (min-width: 1440px) {
+    .sectionBody {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
 }

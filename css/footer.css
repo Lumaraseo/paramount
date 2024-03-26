@@ -1,0 +1,170 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange-general: #FE5D14;
+    --Blue-primary: #0e1438;
+    --Blue-secundary: #131944;
+    --White-general: white;
+    --Black-general: black;
+    --Text-general: #61657E
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.sectionFooter {
+    row-gap: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Blue-primary);
+}
+
+.containLogoFooter {
+    padding-top: 60px;
+}
+
+.containIconFooter {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.iconLogoFooter {
+    height: 30px;
+    width: auto;
+}
+
+.iconInstaFooter,
+.iconFaceFooter {
+    font-size: 40px;
+    color: var(--White-general);
+}
+
+.navListFooter {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconEmailFooter,
+.iconPhoneFooter {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--White-general);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.iconPhoneFooter {
+    width: 177px;
+}
+
+.ulFooter {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulListFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.ulListFooter,
+li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--White-general);
+}
+
+.ulListFooter li a.underline-text-footer {
+    position: relative;
+    text-decoration: none;
+    color: var(--White-general); 
+    transition: color 0.3s;
+}
+
+.ulListFooter li a.underline-text-footer::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--Orange-general);
+    transition: width 0.3s;
+}
+
+.ulListFooter li a.underline-text-footer:hover::after {
+    width: 100%;
+}
+
+.copyRight {
+    padding: 10px;
+    color: var(--White-general);
+    font-size: 10px;
+}
+
+.bi-envelope-fill::before,
+.bi-geo-alt-fill::before,
+.bi-telephone-fill::before {
+    font-size: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .iconInstaFooter,
+    .iconFaceFooter {
+        font-size: 30px;
+    }
+
+    .sectionFooter {
+        padding: 50px 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .containIconFooter {
+        width: 15%;
+    }
+
+    .containLogoFooter {
+        padding-top: 0;
+    }
+
+    .copyRight {
+        width: 111px;
+        line-height: 1.4;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .sectionFooter {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    .containIconFooter {
+        width: 10%;
+    }
+}
