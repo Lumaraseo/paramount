@@ -87,6 +87,7 @@ main {
 }
 
 .card-title {
+    font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
@@ -174,7 +175,7 @@ main {
 }
 
 .cnt-icon24 {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .cnt-callto {

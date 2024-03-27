@@ -39,7 +39,7 @@ body {
 }
 
 .iconLogoFooter {
-    height: 30px;
+    height: 60px;
     width: auto;
 }
 
@@ -74,7 +74,6 @@ body {
 }
 
 .ulFooter {
-    row-gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
