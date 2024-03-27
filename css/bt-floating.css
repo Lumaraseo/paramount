@@ -79,6 +79,7 @@
     margin: -15px;
     opacity: 0;
     visibility: hidden;
+    background-color: var(--White-general);
 }
 
 #btn-mas:checked~.redes a {
