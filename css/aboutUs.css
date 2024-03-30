@@ -1,24 +1,23 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     box-sizing: border-box;
 }
 
 :root {
-    --Orange-general: ##FE5D14;
+    --Orange-general: ##fe5d14;
     --Blue-primary: #0e1438;
     --Blue-secundary: #131944;
     --White-general: white;
     --Black-general: black;
-    --Text-general: #61657E;
+    --Text-general: #61657e;
     --bg-secundary: #f4f6ff;
 }
 
 main {
     padding-top: 100px;
-
 }
 
 .cnt-generalH1 {
@@ -62,7 +61,7 @@ main {
 
 .texth2AboutUs {
     font-size: 18px;
-    color: var(--Blue-primary)
+    color: var(--Blue-primary);
 }
 
 .btn-AboutUs {
@@ -96,7 +95,8 @@ main {
     margin-bottom: 14px;
     text-align: center;
 }
-.titleProce{
+
+.titleProce {
     text-align: center;
 }
 
@@ -114,7 +114,6 @@ main {
     margin-bottom: 30px;
     padding: 0 20px;
 }
-
 
 .work-thumb {
     position: relative;
@@ -157,7 +156,6 @@ main {
     font-size: 20px;
     margin-bottom: 18px;
 }
-
 
 
 @media screen and (min-width: 1440px) {
