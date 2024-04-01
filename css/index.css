@@ -167,11 +167,15 @@ main {
 }
 
 .btn-phone {
+    display: flex;
     font-weight: 600;
+    justify-content: center;
+    align-items: center;
 }
 
 .bi-telephone-outbound-fill {
-    padding-left: 10px;
+    font-size: 25px;
+    padding-right: 10px;
 }
 
 .cnt-icon24 {
@@ -194,7 +198,47 @@ main {
 
 }
 
+@media screen and (min-width: 768px) {
+    .textHomeH1 {
+        padding: 40px 120px;
+    }
+
+    .cnt-cardHome {
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+        padding: 64px 0 100px;
+    }
+
+    .sectionAboutUs {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .titleHomeH1 {
+        padding: 70px 70px 0;
+    }
+
+    .textHomeH1 {
+        padding: 40px 17rem;
+    }
+
+    .cnt-cardHome {
+        gap: 30px;
+    }
+}
+
 @media screen and (min-width: 1440px) {
+
+    .titleHomeH1 {
+        padding: 70px 25rem 0;
+    }
+
+    .textHomeH1 {
+        padding: 40px 28rem;
+    }
+
     .sectionBody {
         margin: 0 auto;
         max-width: 1440px;

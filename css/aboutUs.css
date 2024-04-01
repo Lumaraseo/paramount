@@ -216,4 +216,11 @@ main {
         margin: 0 auto;
         max-width: 1440px;
     }
+    .cnt-workGeneral{
+        display: flex;
+        align-items: start;
+    }
+    .slider {
+        width: 75vw;
+    }
 }
