@@ -1,0 +1,296 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange-general: ##fe5d14;
+    --Blue-primary: #0e1438;
+    --Blue-secundary: #131944;
+    --White-general: white;
+    --Black-general: black;
+    --Text-general: #61657e;
+    --bg-secundary: #f4f6ff;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.titleServis {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 70px 8px 5%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 3rem;
+}
+
+.rowZigzagSer {
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    width: 80px;
+    padding-bottom: 20px;
+}
+
+.textServis {
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    padding: 0 26px 50px;
+    font-size: 18px;
+    color: var(--Text-general);
+}
+
+.containFatherCardSer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 0;
+}
+
+.containCardSer {
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 0.8rem;
+    padding: 10px;
+    box-shadow: 0px 0px 9px -5px #E64C34;
+}
+
+.containImg {
+    padding: 10px;
+    width: 330px;
+    height: auto;
+}
+
+.imgSer {
+    height: auto;
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+    border: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.containInfoSer {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.titleH2InfoSer,
+.titleH2Faq {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 14px;
+    color: var(--Blue-primary);
+    font-weight: 600;
+}
+
+.textH2Info {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    color: var(--Text-general);
+    font-weight: 300;
+}
+
+.containerTableSer {
+    width: 100%;
+}
+
+.TableForServcies {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.TableForServcies,
+.TableForServcies th,
+.TableForServcies td {
+    border: 1px solid #898989;
+    padding: 12px;
+    text-align: center;
+}
+
+.TableForServcies td:nth-child(1) {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    background-color: #d6d6d6;
+}
+
+.TableForServcies td:nth-child(2) {
+    background-color: white;
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.checkTableSer {
+    font-size: 25px;
+    color: var(--Orange-general);
+}
+
+.contianBtn-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-services-table {
+    height: 4rem;
+    width: 15rem;
+    margin: 30px 0;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--White-general);
+    background-color: var(--Orange-general);
+
+}
+
+.btn-services-table:hover {
+    background-color: var(--White-general);
+    color: var(--Orange-general);
+    border: 4px solid var(--Orange-general);
+}
+
+.accordion-button {
+    font-size: 1.3rem;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+}
+
+.accordion {
+    --bs-accordion-btn-bg: var(--Orange-general);
+    --bs-accordion-active-bg: black;
+    --bs-accordion-active-color: white;
+    --bs-accordion-bg: white;
+    --bs-accordion-btn-color: #ffff;
+    --bs-accordion-color: black;
+    --bs-accordion-btn-focus-box-shadow: none;
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .titleH1Ser,
+    .titleH2ser {
+        text-align: center;
+        padding: 5px 14%;
+    }
+
+    .sectionCardSer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containFatherCardSer {
+        width: 45%;
+    }
+
+    .accordion-button {
+        font-size: 1.3rem;
+    }
+    .accordion-body{
+        font-family: "DM Sans", sans-serif;
+    }
+
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+        transition: all 0.5s;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+    }
+
+    .accordion {
+        --bs-accordion-btn-bg: var(--Orange-general);
+        --bs-accordion-active-bg: black;
+        --bs-accordion-active-color: white;
+        --bs-accordion-bg: white;
+        --bs-accordion-btn-color: #ffff;
+        --bs-accordion-color: black;
+        --bs-accordion-btn-focus-box-shadow: none;
+
+    }
+    .accordion-body{
+
+    }
+
+    .containImgH2Faq {
+        padding: 50px 0 30px;
+    }
+
+    .containCardSer {
+        width: 95%;
+    }
+
+    .textH2Info {
+        height: 151px;
+    }
+
+    .titleServis {
+        padding: 10% 8px 5%;
+    }
+
+    .textServis {
+        padding: 0px 150px 50px;
+    }
+
+    .p-2 {
+        padding: 0.5rem 10rem 3rem !important;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .sectionBody {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
+    .titleServis {
+        padding: 10% 8px 2%;
+        font-size: 50px;
+    }
+
+    .textServis {
+        padding: 0px 26% 50px
+    }
+
+    .titleH1Ser,
+    .titleH2ser {
+        text-align: center;
+        padding: 5px 0%;
+    }
+
+    .titleH1Ser {
+        font-size: 85px;
+    }
+
+    .p-2 {
+        padding: 0.5rem 15rem 3rem !important;
+    }
+}
