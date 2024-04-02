@@ -44,7 +44,8 @@ main {
     font-size: 18px;
     color: var(--Text-general);
 }
-.cnt-incosElements{
+
+.cnt-incosElements {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -65,65 +66,29 @@ main {
 .cnt-itemsEle::before {
     content: "";
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     left: 0;
-    width: 0; 
+    width: 0;
     height: 3px;
-    background-color: var(--Blue-primary); 
-    transition: width 0.5s ease; 
+    background-color: var(--Blue-primary);
+    transition: width 0.5s ease;
 }
 
 .cnt-itemsEle:hover::before {
     width: 100%;
 }
 
-.iconElement{
-font-size: 30px;
-color: var(--Text-general);
-padding-bottom: 10px;
+.iconElement {
+    font-size: 30px;
+    color: var(--Text-general);
+    padding-bottom: 10px;
 }
 
-.items-text{
+.items-text {
     font-size: 13px;
     color: var(--Text-general);
 }
 
-.containFatherCardSer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 15px 0;
-}
-
-.containCardSer {
-    width: 90%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 0.8rem;
-    padding: 10px;
-    box-shadow: 0px 0px 9px -5px #E64C34;
-}
-
-.imgSer {
-    height: auto;
-    width: 100%;
-    border-radius: 0.8rem 0.8rem 0 0;
-    border: 1px solid rgb(221, 221, 221);
-    cursor: pointer;
-}
-
-.containInfoSer {
-    width: 100%;
-    padding: 20px 10px;
-}
-
-.titleH2InfoSer,
 .titleH2Faq {
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -133,7 +98,6 @@ padding-bottom: 10px;
     font-weight: 600;
 }
 
-.textH2Info,
 .textFaq {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
@@ -144,63 +108,6 @@ padding-bottom: 10px;
 
 .textFaq {
     padding: 30px 15px 50px;
-}
-
-.containerTableSer {
-    width: 100%;
-}
-
-.TableForServcies {
-    border-collapse: collapse;
-    width: 100%;
-    border-radius: 3rem;
-}
-
-.TableForServcies,
-.TableForServcies th,
-.TableForServcies td {
-    border: 1px solid #898989;
-    padding: 12px;
-    text-align: center;
-}
-
-.TableForServcies td:nth-child(1) {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    background-color: #d6d6d6;
-}
-
-.TableForServcies td:nth-child(2) {
-    background-color: white;
-    width: 30%;
-    height: 50px;
-    line-height: 50px;
-}
-
-.checkTableSer {
-    font-size: 25px;
-    color: var(--Orange-general);
-}
-
-.contianBtn-table {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.btn-services-table {
-    height: 4rem;
-    width: 15rem;
-    margin: 30px 0;
-    font-weight: 500;
-    border: none;
-    border-radius: 0.5rem;
-    color: var(--White-general);
-    background-color: var(--Orange-general);
-
 }
 
 .accordion-body {
@@ -241,12 +148,13 @@ padding-bottom: 10px;
 }
 
 .cnt-callto,
-.cnt-callToindex{
+.cnt-callToindex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .cnt-callto {
     background: linear-gradient(0deg, rgba(97, 101, 126, 1) -18%, rgba(14, 20, 56, 1) 62%);
     padding-bottom: 40px;
@@ -261,6 +169,7 @@ padding-bottom: 10px;
     color: var(--White-general);
     text-shadow: -2px -2px black;
 }
+
 .btn-phone {
     background: var(--Orange-general);
     border: none;
@@ -281,17 +190,6 @@ padding-bottom: 10px;
     .titleH2ser {
         text-align: center;
         padding: 5px 14%;
-    }
-
-    .sectionCardSer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .containFatherCardSer {
-        width: 45%;
     }
 
     .accordion-button {
@@ -324,14 +222,6 @@ padding-bottom: 10px;
 
     .containImgH2Faq {
         padding: 50px 0 30px;
-    }
-
-    .containCardSer {
-        width: 95%;
-    }
-
-    .textH2Info {
-        text-align: left;
     }
 
     .titleServis {
