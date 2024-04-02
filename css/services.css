@@ -67,12 +67,6 @@ main {
     box-shadow: 0px 0px 9px -5px #E64C34;
 }
 
-.containImg {
-    padding: 10px;
-    width: 330px;
-    height: auto;
-}
-
 .imgSer {
     height: auto;
     width: 100%;
@@ -96,11 +90,16 @@ main {
     font-weight: 600;
 }
 
-.textH2Info {
+.textH2Info,
+.textFaq {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     color: var(--Text-general);
     font-weight: 300;
+    text-align: center;
+}
+.textFaq {
+    padding: 30px 15px 50px;
 }
 
 .containerTableSer {
@@ -167,7 +166,11 @@ main {
 }
 
 .accordion-button {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--Blue-primary);
 }
 
 .accordion-button::after {
@@ -187,7 +190,6 @@ main {
     --bs-accordion-btn-color: #ffff;
     --bs-accordion-color: black;
     --bs-accordion-btn-focus-box-shadow: none;
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -212,7 +214,8 @@ main {
     .accordion-button {
         font-size: 1.3rem;
     }
-    .accordion-body{
+
+    .accordion-body {
         font-family: "DM Sans", sans-serif;
     }
 
@@ -235,9 +238,8 @@ main {
         --bs-accordion-btn-focus-box-shadow: none;
 
     }
-    .accordion-body{
 
-    }
+    .accordion-body {}
 
     .containImgH2Faq {
         padding: 50px 0 30px;
