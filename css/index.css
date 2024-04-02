@@ -60,6 +60,28 @@ main {
     border-radius: 4px;
 }
 
+.card-body {
+    background-position: bottom 10px right 10px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+}
+
+.card-bodyFire {
+    background-image: url(../img/fuego.png);
+}
+
+.card-bodyWater {
+    background-image: url(../img/casa-inundada.png);
+}
+
+.card-bodyStorm {
+    background-image: url(../img/tormenta.png);
+}
+
+.card-bodyMold {
+    background-image: url(../img/moho.png);
+}
+
 .cnt-tH1,
 .cnt-cardHome,
 .ctn-aboutUs,
@@ -108,6 +130,10 @@ main {
     font-size: 25px;
     color: var(--Orange-general);
     padding-right: 8px;
+}
+
+.sectionAboutUs {
+    padding: 20px;
 }
 
 .cnt-aboutUs {

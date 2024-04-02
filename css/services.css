@@ -252,7 +252,7 @@ main {
     }
 
     .accordion-button {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .accordion-body {
@@ -288,7 +288,7 @@ main {
     }
 
     .textH2Info {
-        height: 151px;
+        text-align: left;
     }
 
     .titleServis {
