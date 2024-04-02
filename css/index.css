@@ -61,6 +61,11 @@ main {
 }
 
 .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 270px;
     background-position: bottom 10px right 10px;
     background-size: 70px;
     background-repeat: no-repeat;
