@@ -44,6 +44,49 @@ main {
     font-size: 18px;
     color: var(--Text-general);
 }
+.cnt-incosElements{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cnt-itemsEle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.cnt-itemsEle::before {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 0; 
+    height: 3px;
+    background-color: var(--Blue-primary); 
+    transition: width 0.5s ease; 
+}
+
+.cnt-itemsEle:hover::before {
+    width: 100%;
+}
+
+.iconElement{
+font-size: 30px;
+color: var(--Text-general);
+padding-bottom: 10px;
+}
+
+.items-text{
+    font-size: 13px;
+    color: var(--Text-general);
+}
 
 .containFatherCardSer {
     display: flex;
