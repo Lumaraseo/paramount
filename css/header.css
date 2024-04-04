@@ -68,6 +68,17 @@
     background-color: var(--White-general);
 }
 
+.dropdown-menu.show{
+    display: flex;
+    height: 200px;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(8.5px, 24px, 0px);
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .navList li {
     position: relative;
     list-style: none;
@@ -75,7 +86,8 @@
     margin-right: 20px;
 }
 
-.navList li a, .services {
+.navList li a,
+.services {
     text-decoration: none;
     color: var(--Black-general);
     font-size: 20px;
