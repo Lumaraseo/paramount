@@ -20,7 +20,8 @@ main {
     padding-top: 100px;
 }
 
-.titleH1Water, .titleProcess {
+.titleH1Water,
+.titleProcess {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
     font-weight: 700;
