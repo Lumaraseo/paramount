@@ -213,18 +213,31 @@ main {
     text-shadow: -2px -2px black;
 }
 
+.iconCallTo {
+    padding: 10px 20px;
+    background-color: var(--White-general);
+    color: var(--Blue-primary);
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 40px;
+}
+
 .btn-phone {
     background: var(--Orange-general);
     border: none;
     color: var(--White-general);
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 600;
     letter-spacing: 0;
     line-height: 1;
-    padding: 20px 31px;
+    padding: 30px 30px;
     text-align: center;
     border-radius: 4px;
+}
+
+.hiper{
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1440px) {
