@@ -41,3 +41,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+/* Validacion de formulario con Boostrap */
+
+// JavaScript para activar la validación de Bootstrap 5
+(function () {
+  'use strict'
+
+  // Obtén todos los formularios a los que queremos aplicar estilos de validación personalizados de Bootstrap
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Itera sobre ellos y evita el envío
+  Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+          }, false)
+      })
+})()
+
