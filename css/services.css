@@ -45,20 +45,22 @@ main {
     font-size: 18px;
     color: var(--Text-general);
 }
-.bodyPrueba{
+
+.bodyPrueba {
     display: grid;
     place-items: center;
     color: white;
 }
 
-.sectionFather{
+.sectionFather {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap: 30px;
     padding: 1%;
 }
+
 .card {
     width: 100%;
     aspect-ratio: 1 / 0.7;
@@ -82,6 +84,7 @@ main {
     border-radius: inherit;
     transition: 0.5s ease-in-out;
 }
+
 .card::after {
     content: "";
     position: absolute;
@@ -96,6 +99,7 @@ main {
     width: 100%;
     height: 100%;
 }
+
 .card:hover img {
     filter: grayscale(1) brightness(0.4);
 }
@@ -145,21 +149,22 @@ main {
     opacity: 1;
     transform: translateY(0);
 }
+
 .arrow-icon {
     position: absolute;
-    bottom: 10px; 
-    left: 10px; 
-    font-size: 2rem; 
-    color: var(--White-general); 
-    cursor: pointer; 
-    transition: 0.5s ease-in-out; 
+    bottom: 10px;
+    left: 10px;
+    font-size: 2rem;
+    color: var(--White-general);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
     opacity: 1;
 }
 
 .hide-arrow {
     display: none;
     opacity: 0;
-    pointer-events: none; /* Esto previene que el ícono reciba clics cuando esté invisible */
+    pointer-events: none;
 }
 
 .cnt-incosElements {
@@ -206,12 +211,12 @@ main {
     color: var(--Text-general);
 }
 
-.sectionVirtues{
+.sectionVirtues {
     margin: 80px 0;
     background-color: var(--Blue-primary);
 }
 
-.titleSectionVirtudes{
+.titleSectionVirtudes {
     font-family: "Poppins", sans-serif;
     text-align: center;
     color: var(--White-general);
@@ -220,30 +225,31 @@ main {
     font-weight: 600;
 }
 
-.cnt-Fathervirtudes{
+.cnt-Fathervirtudes {
     padding: 50px;
 }
 
-.cnt-cardVirtues{
+.cnt-cardVirtues {
     line-height: 1.4;
     text-align: center;
     margin: 25px 0;
 }
 
-.iconVirtudes{
+.iconVirtudes {
     font-size: 60px;
     color: var(--Orange-general);
 }
 
-.titleVirtudes{
+.titleVirtudes {
     font-family: "Poppins", sans-serif;
     padding: 10px 0;
     color: var(--White-general);
     font-weight: 600;
 }
-.textVirtudes{
+
+.textVirtudes {
     font-family: "DM Sans", sans-serif;
-    color:#b9b9b9;
+    color: #b9b9b9;
 }
 
 .titleH2Faq {
@@ -295,7 +301,7 @@ main {
     --bs-accordion-btn-focus-box-shadow: none;
 }
 
-.cnt-callto{
+.cnt-callto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -316,7 +322,8 @@ main {
     color: var(--White-general);
     text-shadow: -2px -2px black;
 }
-.iconCallTo{
+
+.iconCallTo {
     padding: 10px 20px;
     background-color: var(--White-general);
     color: var(--Blue-primary);
@@ -337,6 +344,57 @@ main {
     padding: 30px 30px;
     text-align: center;
     border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .titleServis {
+        padding: 70px 20% 5%;
+        font-size: 40px;
+    }
+
+    .textServis {
+        font-size: 20px;
+        padding: 0 16% 50px;
+    }
+
+    .cnt-incosElements {
+        width: 75%;
+        margin: 30px auto;
+    }
+
+    .sectionFather {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card {
+        width: 49%;
+    }
+
+    .cnt-Fathervirtudes {
+        width: 60%;
+        margin: auto;
+    }
+
+    .titleH2Faq {
+        font-size: 40px;
+    }
+
+    .titleVirtudes {
+        font-size: 20px;
+    }
+
+    .textFaq {
+        font-size: 20px;
+        padding: 30px 20% 50px;
+    }
+
+    .container {
+        margin-bottom: 50px;
+
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -384,11 +442,29 @@ main {
     }
 
     .textServis {
-        padding: 0px 150px 50px;
+        padding: 0px 25% 50px;
     }
 
     .p-2 {
         padding: 0.5rem 10rem 3rem !important;
+    }
+
+    .cnt-Fathervirtudes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 50px 70px;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .cnt-incosElements {
+        width: 50%;
+    }
+    .sectionVirtues {
+        margin: 80px 0 0;
     }
 }
 
@@ -405,7 +481,7 @@ main {
     }
 
     .textServis {
-        padding: 0px 26% 50px
+        padding: 0px 30% 50px
     }
 
     .titleH1Ser,
@@ -421,4 +497,13 @@ main {
     .p-2 {
         padding: 0.5rem 15rem 3rem !important;
     }
+
+    .card {
+        width: 33%;
+    }
+
+    .cnt-Fathervirtudes {
+        gap: 40px;
+    }
+
 }
