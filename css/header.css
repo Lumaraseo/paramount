@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 700px;
+    width: 100%;
 }
 
 .btn-primary {
@@ -124,6 +124,31 @@
     width: 100%;
 }
 
+.hiper {
+    text-decoration: none;
+}
+.btn-phoneHeader {
+    background: var(--Orange-general);
+    border: none;
+    color: var(--White-general);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 4px;
+}
+.iconCallToHeader {
+    padding: 10px 20px;
+    background-color: var(--White-general);
+    color: var(--Blue-primary);
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
 .openMenu,
 .closeMenu {
     display: none;
@@ -159,7 +184,7 @@
     border-radius: 4px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 982px) {
 
     .openMenu,
     .closeMenu {
