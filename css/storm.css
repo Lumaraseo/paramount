@@ -234,6 +234,53 @@ main {
     text-align: center;
     border-radius: 4px;
 }
+@media screen and (min-width: 768px){
+    .containCardSer {
+        width: 60%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .containImgSer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgSer {
+        width: 80%;
+        border-radius: 0;
+    }
+
+    .textH1Storm {
+        padding: 30px 81px 24px;
+    }
+
+    .accordion {
+        padding: 20px 15%;
+    }
+
+    .titleProcess {
+        padding: 23px 87px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .containCardSer {
+        width: 90%;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgSer {
+        width: 80%;
+    }
+}
 
 @media screen and (min-width: 1440px) {
     .sectionBody {

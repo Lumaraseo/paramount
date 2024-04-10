@@ -19,6 +19,7 @@
 main {
     padding-top: 100px;
 }
+
 .containFatherCardSer {
     display: flex;
     flex-direction: column;
@@ -66,12 +67,14 @@ main {
 }
 
 .textH2Info,
-.textFaq {
+.textFaq, 
+.textH1Fire {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     color: var(--Text-general);
     font-weight: 300;
     text-align: center;
+    line-height: 1.3;
 }
 
 .textFaq {
@@ -171,7 +174,7 @@ main {
     --bs-accordion-btn-focus-box-shadow: none;
 }
 
-.cnt-callto{
+.cnt-callto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,11 +219,11 @@ main {
     border-radius: 4px;
 }
 
-.hiper{
+.hiper {
     text-decoration: none;
 }
 
-.titleH1Fire{
+.titleH1Fire {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
     font-weight: 700;
@@ -230,12 +233,52 @@ main {
     text-align: center;
 }
 
-.textH1Fire {
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.4;
-    color: var(--Text-general);
-    padding: 30px 15px 24px;
+@media screen and (min-width: 768px) {
+    .containCardSer {
+        width: 60%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .containImgSer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgSer {
+        width: 80%;
+        border-radius: 0;
+    }
+
+    .textH1Fire {
+        padding: 30px 81px 24px;
+    }
+
+    .accordion {
+        padding: 20px 15%;
+    }
+
+    .titleProcess {
+        padding: 23px 87px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .containCardSer {
+        width: 90%;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgSer {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -244,3 +287,4 @@ main {
         max-width: 1440px;
     }
 }
+
