@@ -66,48 +66,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Inicialización de EmailJS con tu publicKey */
 
-(function () {
-  emailjs.init("qi8xMaBDh6B9UBbJ1");
-})();
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
 
-  form.addEventListener(
-    "submit",
-    function (event) {
-      event.preventDefault();
+  if (form) { // Verifica si el formulario existe en la página actual
+    form.addEventListener(
+      "submit",
+      function (event) {
+        event.preventDefault();
 
-      if (form.checkValidity()) {
-        emailjs.sendForm("service_2omznn6", "template_zm2imnf", this).then(
-          function () {
-            console.log("SUCCESS!");
-            // Usar SweetAlert2 para el mensaje de éxito
-            Swal.fire({
-              icon: "success",
-              title: "Success!",
-              text: "Your message has been sent successfully.",
-            });
-            form.reset();
-            form.classList.remove("was-validated");
-          },
-          function (error) {
-            console.log("FAILED...", error);
-            // Usar SweetAlert2 para el mensaje de error
-            Swal.fire({
-              icon: "error",
-              title: "Error",
-              text: "The message could not be sent, please try again.",
-            });
-          }
-        );
-      } else {
-        event.stopPropagation();
-      }
+        if (form.checkValidity()) {
+          emailjs.sendForm("service_2omznn6", "template_zm2imnf", this).then(
+            function () {
+              console.log("SUCCESS!");
+              // Usar SweetAlert2 para el mensaje de éxito
+              Swal.fire({
+                icon: "success",
+                title: "Success!",
+                text: "Your message has been sent successfully.",
+              });
+              form.reset();
+              form.classList.remove("was-validated");
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              // Usar SweetAlert2 para el mensaje de error
+              Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "The message could not be sent, please try again.",
+              });
+            }
+          );
+        } else {
+          event.stopPropagation();
+        }
 
-      form.classList.add("was-validated");
-    },
-    false
-  );
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  }
+
+  // Solo inicializa EmailJS si el formulario existe
+  
+  if (form) {
+    (function () {
+      emailjs.init("qi8xMaBDh6B9UBbJ1");
+    })();
+  }
 });
-
