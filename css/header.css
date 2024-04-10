@@ -78,6 +78,9 @@
     flex-direction: column;
     justify-content: space-around;
 }
+.btn-group{
+    margin-right: 20px;
+}
 
 .navList li {
     position: relative;
