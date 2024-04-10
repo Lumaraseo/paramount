@@ -83,6 +83,7 @@ main {
     color: var(--Text-general);
     font-weight: 300;
     text-align: center;
+    line-height: 1.3;
 }
 
 .textH1Mold {
@@ -245,6 +246,12 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+
+    .titleH1Mold {
+        max-width: 600px;
+        margin: auto;
+    }
+
     .containCardSer {
         width: 60%;
         border: none;
@@ -283,7 +290,7 @@ main {
     }
 
     .textH1Mold {
-        padding: 30px 81px 24px;
+        padding: 30px 10% 24px;
     }
 
     .accordion {
@@ -297,6 +304,11 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
+
+    .sectionTittle {
+        margin-top: 70px;
+    }
+
     .containCardSer {
         width: 90%;
         position: relative;

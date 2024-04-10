@@ -76,7 +76,7 @@ main {
 }
 
 .titleH2InfoSer,
-.titleH2Faq{
+.titleH2Faq {
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 20px;
@@ -192,7 +192,7 @@ main {
     --bs-accordion-btn-focus-box-shadow: none;
 }
 
-.cnt-callto{
+.cnt-callto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,11 +237,15 @@ main {
     border-radius: 4px;
 }
 
-.hiper{
+.hiper {
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+
+    .titleH1Water {
+        padding: 50px 115px 10px;
+    }
     .containCardSer {
         width: 60%;
         border: none;
@@ -260,17 +264,17 @@ main {
         position: absolute;
         width: 80%;
         height: 100%;
-        background-color:var(--Orange-general);
+        background-color: var(--Orange-general);
         z-index: -1;
         top: -14px;
         left: 61px;
-        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
         border: none;
     }
-    
+
     .imgSer {
         display: block;
-        width: 100%; 
+        width: 100%;
         height: auto;
         position: relative;
         z-index: 1;
@@ -294,6 +298,21 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
+
+    .sectionTittle {
+        margin-top: 70px;
+    }
+
+    .titleH1Water {
+        max-width:700px;
+        margin: auto;
+    }
+
+    .textH1Water {
+        max-width: 900px;
+        margin: auto;
+    }
+
     .containCardSer {
         width: 90%;
         position: relative;

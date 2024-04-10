@@ -272,7 +272,7 @@ main {
     }
 
     .textH1Fire {
-        padding: 30px 81px 24px;
+        padding: 30px 24px;
     }
 
     .accordion {
@@ -286,6 +286,12 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
+
+    .sectionTittle{
+        margin-top: 70px;
+
+    }
+
     .containCardSer {
         width: 90%;
         position: relative;
@@ -293,6 +299,16 @@ main {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
+    }
+
+    .titleH1Fire{
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .textH1Fire{
+        max-width: 1021px;
+        margin: auto;
     }
 
     .imgSer {
