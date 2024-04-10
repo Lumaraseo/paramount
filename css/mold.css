@@ -30,6 +30,7 @@ main {
     padding: 50px 10px 10px;
     text-align: center;
 }
+
 .containFatherCardSer {
     display: flex;
     flex-direction: column;
@@ -66,7 +67,7 @@ main {
 }
 
 .titleH2InfoSer,
-.titleH2Faq{
+.titleH2Faq {
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 20px;
@@ -76,7 +77,7 @@ main {
 }
 
 .textH2Info,
-.textFaq{
+.textFaq {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     color: var(--Text-general);
@@ -84,7 +85,7 @@ main {
     text-align: center;
 }
 
-.textH1Mold{
+.textH1Mold {
     text-align: center;
     font-size: 16px;
     line-height: 1.4;
@@ -160,7 +161,8 @@ main {
 .titleProcess {
     font-size: 25px;
 }
-.textH1Storm  {
+
+.textH1Storm {
     text-align: center;
     font-size: 16px;
     line-height: 1.4;
@@ -219,7 +221,7 @@ main {
     text-shadow: -2px -2px black;
 }
 
-.iconCallTo{
+.iconCallTo {
     padding: 10px 20px;
     background-color: var(--White-general);
     color: var(--Blue-primary);
@@ -242,7 +244,7 @@ main {
     border-radius: 4px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .containCardSer {
         width: 60%;
         border: none;
@@ -254,11 +256,30 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+
+    .cuadro {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        background-color: var(--Orange-general);
+        z-index: -1;
+        top: -14px;
+        left: 61px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        border: none;
     }
 
     .imgSer {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
         width: 80%;
         border-radius: 0;
+        border: none;
     }
 
     .textH1Mold {
@@ -288,11 +309,19 @@ main {
     .imgSer {
         width: 80%;
     }
+
+    .cuadro {
+        left: 65px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .sectionBody {
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    .cuadro {
+        left: 85px;
     }
 }

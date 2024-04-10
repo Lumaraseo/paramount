@@ -253,11 +253,30 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 
+    .cuadro {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        background-color:var(--Orange-general);
+        z-index: -1;
+        top: -14px;
+        left: 61px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        border: none;
+    }
+    
     .imgSer {
+        display: block;
+        width: 100%; 
+        height: auto;
+        position: relative;
+        z-index: 1;
         width: 80%;
         border-radius: 0;
+        border: none;
     }
 
     .textH1Water {
@@ -287,11 +306,19 @@ main {
     .imgSer {
         width: 80%;
     }
+
+    .cuadro {
+        left: 65px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .sectionBody {
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    .cuadro {
+        left: 85px;
     }
 }
