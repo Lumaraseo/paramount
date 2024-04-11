@@ -12,32 +12,31 @@ close.addEventListener("click", () => {
   nav.classList.remove("visible");
 });
 
-
 /* Arrows that appear and disappear on service page cards */
 
-document.addEventListener('DOMContentLoaded', () => {
-  let cards = document.querySelectorAll('.card');
+document.addEventListener("DOMContentLoaded", () => {
+  let cards = document.querySelectorAll(".card");
 
-  const hideArrow = (arrowIcon) => arrowIcon.classList.add('hide-arrow');
-  const showArrow = (arrowIcon) => arrowIcon.classList.remove('hide-arrow');
+  const hideArrow = (arrowIcon) => arrowIcon.classList.add("hide-arrow");
+  const showArrow = (arrowIcon) => arrowIcon.classList.remove("hide-arrow");
 
-  cards.forEach(card => {
-      let arrowIcon = card.querySelector('.arrow-icon');
+  cards.forEach((card) => {
+    let arrowIcon = card.querySelector(".arrow-icon");
 
-      card.addEventListener('click', e => {
-          e.stopPropagation();
-          hideArrow(arrowIcon);
-      });
+    card.addEventListener("click", (e) => {
+      e.stopPropagation();
+      hideArrow(arrowIcon);
+    });
 
-      card.addEventListener('mouseover', () => hideArrow(arrowIcon));
-      card.addEventListener('mouseout', () => showArrow(arrowIcon));
+    card.addEventListener("mouseover", () => hideArrow(arrowIcon));
+    card.addEventListener("mouseout", () => showArrow(arrowIcon));
   });
 
-  document.addEventListener('click', () => {
-      cards.forEach(card => {
-          let arrowIcon = card.querySelector('.arrow-icon');
-          showArrow(arrowIcon);
-      });
+  document.addEventListener("click", () => {
+    cards.forEach((card) => {
+      let arrowIcon = card.querySelector(".arrow-icon");
+      showArrow(arrowIcon);
+    });
   });
 });
 
@@ -45,23 +44,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // JavaScript para activar la validación de Bootstrap 5
 (function () {
-  'use strict'
+  "use strict";
 
   // Obtén todos los formularios a los que queremos aplicar estilos de validación personalizados de Bootstrap
-  var forms = document.querySelectorAll('.needs-validation')
+  var forms = document.querySelectorAll(".needs-validation");
 
   // Itera sobre ellos y evita el envío
-  Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-              if (!form.checkValidity()) {
-                  event.preventDefault()
-                  event.stopPropagation()
-              }
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
 
-              form.classList.add('was-validated')
-          }, false)
-      })
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
 })();
 
 /* Inicialización de EmailJS con tu publicKey */
@@ -69,7 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
 
-  if (form) { // Verifica si el formulario existe en la página actual
+  if (form) {
+    // Verifica si el formulario existe en la página actual
     form.addEventListener(
       "submit",
       function (event) {
@@ -109,10 +112,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Solo inicializa EmailJS si el formulario existe
-  
+
   if (form) {
     (function () {
       emailjs.init("qi8xMaBDh6B9UBbJ1");
     })();
   }
 });
+
+/* Google Analytic */
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "G-QHXX5RVJ86");
