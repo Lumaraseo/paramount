@@ -45,6 +45,10 @@ main {
     color: var(--White-general);
 }
 
+.call24 {
+    text-decoration: none;
+}
+
 .btn-HomeH1,
 .btn-phone {
     background: var(--Orange-general);
@@ -58,8 +62,10 @@ main {
     padding: 20px 31px;
     text-align: center;
     border-radius: 4px;
+    text-decoration: none;
 }
-.card{
+
+.card {
     width: 23rem;
 }
 
@@ -124,11 +130,12 @@ main {
 .sectionAboutUs {
     padding: 20px;
 }
-.cnt-imgCollage{
+
+.cnt-imgCollage {
     display: none;
 }
 
-.imgCollage{
+.imgCollage {
     border-radius: 1rem;
 }
 
@@ -242,7 +249,7 @@ main {
     border-radius: 4px;
 }
 
-.hiper{
+.hiper {
     text-decoration: none;
 }
 
@@ -275,18 +282,22 @@ main {
     .cnt-cardHome {
         gap: 30px;
     }
-    .sectionAboutUs{
+
+    .sectionAboutUs {
         display: flex;
     }
-    .cnt-FatherAbout{
+
+    .cnt-FatherAbout {
         width: 50%;
     }
+
     .cnt-imgCollage {
         display: flex;
         width: 50%;
         justify-content: center;
         align-items: center;
     }
+
     .imgCollage {
         width: 80%;
     }
@@ -306,7 +317,8 @@ main {
         margin: 0 auto;
         max-width: 1440px;
     }
-    .card{
+
+    .card {
         width: 21rem;
     }
 
@@ -317,6 +329,7 @@ main {
     .imgCollage {
         width: 65%;
     }
+
     .sectionAboutUs {
         padding: 80px 10%;
     }
