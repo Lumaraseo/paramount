@@ -17,8 +17,17 @@ close.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   let cards = document.querySelectorAll(".card");
 
-  const hideArrow = (arrowIcon) => arrowIcon.classList.add("hide-arrow");
-  const showArrow = (arrowIcon) => arrowIcon.classList.remove("hide-arrow");
+  const hideArrow = (arrowIcon) => {
+    if (arrowIcon) {  // Verifica que arrowIcon no sea null
+      arrowIcon.classList.add("hide-arrow");
+    }
+  };
+
+  const showArrow = (arrowIcon) => {
+    if (arrowIcon) {  // Verifica que arrowIcon no sea null
+      arrowIcon.classList.remove("hide-arrow");
+    }
+  };
 
   cards.forEach((card) => {
     let arrowIcon = card.querySelector(".arrow-icon");
@@ -32,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.addEventListener("mouseout", () => showArrow(arrowIcon));
   });
 
+  // Evento global para restablecer las flechas cuando se hace clic en cualquier lugar
   document.addEventListener("click", () => {
     cards.forEach((card) => {
       let arrowIcon = card.querySelector(".arrow-icon");
@@ -39,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 /* Validacion de formulario con Boostrap */
 
@@ -128,3 +139,29 @@ function gtag() {
 }
 gtag("js", new Date());
 gtag("config", "G-QHXX5RVJ86");
+
+
+/* Cookies */
+
+const cookieBox = document.querySelector(".wrapper");
+
+if (cookieBox) { // Verifica si cookieBox existe
+    const acceptBtn = cookieBox.querySelector("button");
+
+    if (acceptBtn) { // Verifica si acceptBtn existe
+        acceptBtn.onclick = () => {
+            // Estableciendo la cookie por 1 mes, después de un mes expirará automáticamente
+            document.cookie = "CookieBy=CodingNepal; max-age=" + 60 * 60 * 24 * 30;
+            if (document.cookie) { // Si la cookie está establecida
+                cookieBox.classList.add("hide"); // Ocultar el cuadro de cookies
+            } else { // Si la cookie no está establecida, entonces alertar un error
+                alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+            }
+        };
+    }
+
+    let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); // Revisando nuestra cookie
+    // Si la cookie está establecida entonces oculta el cuadro de cookies, si no, muéstralo
+    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+}
+
