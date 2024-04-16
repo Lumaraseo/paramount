@@ -18,7 +18,7 @@
 
 .wrapper {
     position: fixed;
-    bottom: 30px;
+    bottom: 100px;
     left: 30px;
     max-width: 365px;
     background: #fff;
@@ -47,6 +47,7 @@
 .cnt-content header {
     font-size: 25px;
     font-weight: 600;
+    color: var(--Blue-primary);
 }
 
 .cnt-content {
@@ -72,7 +73,7 @@
     font-size: 16px;
     font-weight: 500;
     border-radius: 5px;
-    background: #FCBA7F;
+    background: var(--Orange-general);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -86,5 +87,21 @@
 }
 
 .buttons a {
-    color: #FCBA7F;
+    color: var(--Blue-primary);
+}
+
+@media screen and (min-width: 768px) {
+
+    .wrapper {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        max-width: 365px;
+        background: #fff;
+        padding: 25px 25px 30px 25px;
+        border-radius: 15px;
+        box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+
 }
