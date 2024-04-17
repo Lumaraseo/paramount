@@ -140,6 +140,10 @@ main {
     padding: 20px;
 }
 
+.accordion-body {
+    font-family: "DM Sans", sans-serif;
+}
+
 .titleProcess {
     font-weight: 700;
     font-size: 25px;

@@ -47,6 +47,7 @@ main {
     line-height: 1.4;
     color: var(--Text-general);
     padding: 30px 0 24px;
+    font-family: "DM Sans", sans-serif;
 }
 
 
@@ -71,6 +72,7 @@ main {
 .texth2AboutUs {
     font-size: 18px;
     color: var(--Blue-primary);
+    font-family: "DM Sans", sans-serif;
 }
 
 .btn-AboutUs {
@@ -120,6 +122,7 @@ main {
 }
 
 .text {
+    font-family: "DM Sans", sans-serif;
     line-height: 1.3;
 }
 
