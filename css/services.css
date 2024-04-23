@@ -531,4 +531,8 @@ main {
         gap: 40px;
     }
 
+    .sectionVirtues {
+        border-radius: 3rem;
+    }
+
 }
