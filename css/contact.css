@@ -182,6 +182,9 @@ main {
     border: none;
 }
 
+.swal2-popup {
+    font-family: "Poppins", sans-serif;
+}
 
 @media screen and (min-width: 768px) {
     .info-container {
@@ -226,7 +229,8 @@ main {
     .map-container {
         margin: auto;
         max-width: 70%;
-        padding-top: 40%; /* 4:3 Aspect Ratio */
+        padding-top: 40%;
+        /* 4:3 Aspect Ratio */
         margin-bottom: 40px;
     }
 
